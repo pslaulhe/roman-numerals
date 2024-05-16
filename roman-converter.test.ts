@@ -41,4 +41,33 @@ describe('RomanConverter', () => {
     it ('should convert 10 to X', () => {
         expect(RomanNumberConverter.convert(10)).toBe('X');
     });
+
+    it ('should convert 40 to XL', () => {
+        expect(RomanNumberConverter.convert(40)).toBe('XL');
+    });
+
+    it ('should convert 50 to L', () => {
+        expect(RomanNumberConverter.convert(50)).toBe('L');
+    });
+
+    // TODO: Write loop to use breakdown function and subtract each result to end up with the combination
+    /*it ('should convert 49 to XLIX', () => {
+        expect(RomanNumberConverter.convert(49)).toBe('XLIX');
+    });
+
+    it ('should convert 34 to XXXIV', () => {
+        expect(RomanNumberConverter.convert(34)).toBe('XXXIV');
+    });
+
+    it ('should convert 33 to XXXIII', () => {
+        expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
+    });*/
+
+    it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
+        const numberToTest = 43;
+        const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
+
+        const output = RomanNumberConverter.breakdownMaxSymbolValue(numberToTest, listOfArabicNumbers)
+        expect(output).toBe(40);
+    });
 });

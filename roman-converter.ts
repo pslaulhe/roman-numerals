@@ -10,9 +10,16 @@ export abstract class RomanNumberConverter {
         [8, 'VIII'],
         [9, 'IX'],
         [10, 'X'],
+        [40, 'XL'],
+        [50, 'L'],
     ]);
 
     static convert(number: number) {
         return this.arabicToRomanSymbolMap.get(number);
+    }
+
+    static breakdownMaxSymbolValue(numberToTest: number, listOfArabicNumbers: number[]) {
+        const validCandidates = listOfArabicNumbers.filter(n => n <= numberToTest);
+        return Math.max(...validCandidates);
     }
 }
