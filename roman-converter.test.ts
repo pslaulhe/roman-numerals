@@ -6,6 +6,14 @@ describe('RomanConverter', () => {
         expect(romanSymbol).toBe('I');
     });
 
+    it('should convert 2 to II', () => {
+        expect(RomanNumberConverter.convert(2)).toBe('II');
+    });
+
+    it('should convert 3 to III', () => {
+        expect(RomanNumberConverter.convert(3)).toBe('III');
+    });
+
     it ('should convert 4 to IV', () => {
        expect(RomanNumberConverter.convert(4)).toBe('IV');
     });
