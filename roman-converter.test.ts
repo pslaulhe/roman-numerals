@@ -8,4 +8,8 @@ describe('RomanConverter', () => {
     it('should convert 2 to II', () => {
         expect(RomanNumberConverter.convert(2)).toBe('II');
     });
+
+    it('should convert 3 to III', () => {
+        expect(RomanNumberConverter.convert(3)).toBe('III');
+    });
 });
