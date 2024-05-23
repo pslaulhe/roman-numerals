@@ -7,18 +7,12 @@ export abstract class RomanNumberConverter {
     ]);
 
     static convert(number: number): string {
-        if (number >= 9) {
-            return this.map.get(9) + this.convert(number - 9);
+        for (let [key, value] of this.map) {
+            if (number >= key) {
+                return value + this.convert(number - key);
+            }
         }
-        if (number >= 5) {
-            return this.map.get(5) + this.convert(number - 5);
-        }
-        if (number >= 4) {
-            return this.map.get(4) + this.convert(number - 4)
-        }
-        if (number >= 1) {
-            return this.map.get(1) + this.convert(number - 1);
-        }
+
         return '';
     }
 }
