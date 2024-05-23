@@ -36,4 +36,51 @@ describe('RomanConverter', () => {
     it('should convert 9 to IX', () => {
         expect(RomanNumberConverter.convert(9)).toBe('IX');
     });
+
+    it ('should convert 10 to X', () => {
+        expect(RomanNumberConverter.convert(10)).toBe('X');
+    });
+
+    /*it ('should convert 40 to XL', () => {
+        expect(RomanNumberConverter.convert(40)).toBe('XL');
+    });
+
+    it ('should convert 50 to L', () => {
+        expect(RomanNumberConverter.convert(50)).toBe('L');
+    });
+
+    it ('should convert 49 to XLIX', () => {
+        expect(RomanNumberConverter.convert(49)).toBe('XLIX');
+    });
+    it ('should convert 34 to XXXIV', () => {
+        expect(RomanNumberConverter.convert(34)).toBe('XXXIV');
+    });
+
+    it ('should convert 33 to XXXIII', () => {
+        expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
+    });
+
+    it ('should convert 130 to CXXX', () => {
+        expect(RomanNumberConverter.convert(130)).toBe('CXXX');
+    });
+
+    it ('should convert 195 to CXCV', () => {
+        expect(RomanNumberConverter.convert(195)).toBe('CXCV');
+    });
+
+    it ('should convert 483 to CDLXXXIII', () => {
+        expect(RomanNumberConverter.convert(483)).toBe('CDLXXXIII');
+    });
+
+    it ('should convert 901 to CMI', () => {
+        expect(RomanNumberConverter.convert(901)).toBe('CMI');
+    });
+
+    it ('should convert 999 to CMXCIX', () => {
+        expect(RomanNumberConverter.convert(999)).toBe('CMXCIX');
+    });
+
+    it ('should convert 1464 to MCDLXIV', () => {
+        expect(RomanNumberConverter.convert(1464)).toBe('MCDLXIV');
+    });*/
 });
