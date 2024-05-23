@@ -4,10 +4,10 @@ export abstract class RomanNumberConverter {
             return 'IV';
         }
         if (number === 3) {
-            return 'III';
+            return 'I' + 'II';
         }
         if (number === 2) {
-            return 'II';
+            return 'I' + 'I';
         }
         if (number === 1) {
             return 'I';
