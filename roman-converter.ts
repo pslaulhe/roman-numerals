@@ -15,11 +15,20 @@ export abstract class RomanNumberConverter {
     ]);
 
     static convert(number: number) {
-        return this.arabicToRomanSymbolMap.get(number);
+        return this.breakdown(number).map(x => this.arabicToRomanSymbolMap.get(x)).join('');
+    }
+
+    static breakdown(numberToBreakdown: number): number[] {
+        const max = this.breakdownMaxSymbolValue(numberToBreakdown, Array.from(this.arabicToRomanSymbolMap.keys()));
+
+        if (max === 0) return [];
+        else return [max, ...this.breakdown(numberToBreakdown - max)];
     }
 
     static breakdownMaxSymbolValue(numberToTest: number, listOfArabicNumbers: number[]) {
         const validCandidates = listOfArabicNumbers.filter(n => n <= numberToTest);
-        return Math.max(...validCandidates);
+
+        if (validCandidates.length === 0) return 0;
+        else return Math.max(...validCandidates);
     }
 }

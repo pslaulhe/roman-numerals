@@ -51,17 +51,17 @@ describe('RomanConverter', () => {
     });
 
     // TODO: Write loop to use breakdown function and subtract each result to end up with the combination
-    /*it ('should convert 49 to XLIX', () => {
+  /*  it ('should convert 49 to XLIX', () => {
         expect(RomanNumberConverter.convert(49)).toBe('XLIX');
-    });
-
+    });*/
+/*
     it ('should convert 34 to XXXIV', () => {
         expect(RomanNumberConverter.convert(34)).toBe('XXXIV');
-    });
+    });*/
 
     it ('should convert 33 to XXXIII', () => {
         expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
-    });*/
+    });
 
     it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
         const numberToTest = 43;
