@@ -40,15 +40,6 @@ describe('RomanConverter', () => {
     it ('should convert 10 to X', () => {
         expect(RomanNumberConverter.convert(10)).toBe('X');
     });
-
-    /*it ('should convert 40 to XL', () => {
-        expect(RomanNumberConverter.convert(40)).toBe('XL');
-    });
-
-    it ('should convert 50 to L', () => {
-        expect(RomanNumberConverter.convert(50)).toBe('L');
-    });
-
     it ('should convert 49 to XLIX', () => {
         expect(RomanNumberConverter.convert(49)).toBe('XLIX');
     });
@@ -82,5 +73,5 @@ describe('RomanConverter', () => {
 
     it ('should convert 1464 to MCDLXIV', () => {
         expect(RomanNumberConverter.convert(1464)).toBe('MCDLXIV');
-    });*/
+    });
 });
