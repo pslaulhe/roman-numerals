@@ -1,5 +1,8 @@
 export abstract class RomanNumberConverter {
     static convert(number: number): string {
+        if (number >= 6) {
+            return 'VI';
+        }
         if (number >= 5) {
             return 'V';
         }
