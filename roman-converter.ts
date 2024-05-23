@@ -6,7 +6,7 @@ export abstract class RomanNumberConverter {
         if (number >= 5) {
             return 'V' + this.convert(number - 5);
         }
-        if (number === 4) {
+        if (number >= 4) {
             return 'IV';
         }
         if (number >= 1) {
