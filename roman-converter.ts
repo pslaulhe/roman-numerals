@@ -4,13 +4,13 @@ export abstract class RomanNumberConverter {
             return 'IV';
         }
         if (number === 3) {
-            return 'I' + 'II';
+            return 'I' + this.convert(number - 1);
         }
         if (number === 2) {
-            return 'I' + 'I';
+            return 'I' + this.convert(number - 1);
         }
         if (number === 1) {
-            return 'I';
+            return 'I' + this.convert(number - 1);
         }
         return '';
     }
