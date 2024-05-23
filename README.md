@@ -8,6 +8,7 @@
 * It should convert 10 to X
 * It should convert 40 to XL
 * It should convert 50 to L
+* It should convert 90 to XC
 * It should convert 100 to C
 * It should convert 400 to CD
 * It should convert 500 to D

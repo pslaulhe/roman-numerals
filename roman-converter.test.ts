@@ -61,6 +61,18 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
     });
 
+    it ('should convert 130 to CXXX', () => {
+        expect(RomanNumberConverter.convert(130)).toBe('CXXX');
+    });
+
+    it ('should convert 195 to CXCV', () => {
+        expect(RomanNumberConverter.convert(195)).toBe('CXCV');
+    });
+
+/*    it ('should convert 190 to CLXXIX', () => {
+        expect(RomanNumberConverter.convert(33)).toBe('CXXX');
+    });*/
+
     it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
