@@ -13,7 +13,7 @@ export abstract class RomanNumberConverter {
             return 'V' + this.convert(number - 5);
         }
         if (number >= 5) {
-            return 'V';
+            return 'V' + this.convert(number - 5);
         }
         if (number === 4) {
             return 'IV';
