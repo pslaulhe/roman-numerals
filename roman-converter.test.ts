@@ -12,4 +12,8 @@ describe('RomanConverter', () => {
     it('should convert 3 to III', () => {
         expect(RomanNumberConverter.convert(3)).toBe('III');
     });
+
+    it('should convert 4 to IV', () => {
+        expect(RomanNumberConverter.convert(4)).toBe('IV');
+    });
 });
