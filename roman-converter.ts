@@ -4,13 +4,13 @@ export abstract class RomanNumberConverter {
             return 'IX';
         }
         if (number >= 8) {
-            return 'VIII';
+            return 'V' + 'III';
         }
         if (number >= 7) {
-            return 'VII';
+            return 'V' +'II';
         }
         if (number >= 6) {
-            return 'VI';
+            return 'V' +'I';
         }
         if (number >= 5) {
             return 'V';
