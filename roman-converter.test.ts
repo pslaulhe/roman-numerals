@@ -24,4 +24,16 @@ describe('RomanConverter', () => {
     it('should convert 6 to VI', () => {
         expect(RomanNumberConverter.convert(6)).toBe('VI');
     });
+
+    it('should convert 7 to VII ', () => {
+        expect(RomanNumberConverter.convert(7)).toBe('VII');
+    });
+
+    it('should convert 8 to VIII', () => {
+        expect(RomanNumberConverter.convert(8)).toBe('VIII');
+    });
+
+    it('should convert 9 to IX', () => {
+        expect(RomanNumberConverter.convert(9)).toBe('IX');
+    });
 });
