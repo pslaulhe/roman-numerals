@@ -69,9 +69,17 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(195)).toBe('CXCV');
     });
 
-/*    it ('should convert 190 to CLXXIX', () => {
-        expect(RomanNumberConverter.convert(33)).toBe('CXXX');
-    });*/
+    it ('should convert 483 to CDLXXXIII', () => {
+        expect(RomanNumberConverter.convert(483)).toBe('CDLXXXIII');
+    });
+
+    it ('should convert 901 to CMI', () => {
+        expect(RomanNumberConverter.convert(901)).toBe('CMI');
+    });
+
+    it ('should convert 999 to CMXCIX', () => {
+        expect(RomanNumberConverter.convert(999)).toBe('CMXCIX');
+    });
 
     it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
         const numberToTest = 43;
