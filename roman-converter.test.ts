@@ -81,6 +81,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(999)).toBe('CMXCIX');
     });
 
+    it ('should convert 1464 to MCDLXIV', () => {
+        expect(RomanNumberConverter.convert(1464)).toBe('MCDLXIV');
+    });
+
     it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
