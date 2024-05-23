@@ -20,4 +20,8 @@ describe('RomanConverter', () => {
     it('should convert 5 to V', () => {
         expect(RomanNumberConverter.convert(5)).toBe('V');
     });
+
+    it('should convert 6 to VI', () => {
+        expect(RomanNumberConverter.convert(6)).toBe('VI');
+    });
 });
