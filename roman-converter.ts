@@ -1,5 +1,6 @@
 export abstract class RomanNumberConverter {
     static map = new Map<number, string>([
+        [10, 'X'],
         [9, 'IX'],
         [5, 'V'],
         [4, 'IV'],
